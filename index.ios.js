@@ -12,24 +12,38 @@ var {
   View,
 } = React;
 
-var RVDB = React.createClass({
-  render: function() {
-    return (
+class RVDB extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      position: 'unknown'
+    }
+  }
+
+  componentDidMount() {
+    navigator.geolocation.getCurrentPosition(
+      (position) => this.setState({position}),
+      (error) => console.log(error)
+    );
+  }
+
+  render() {
+    return(
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Position: {JSON.stringify(this.state.position)}
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit index.ios.js
+
         </Text>
         <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
+
         </Text>
       </View>
     );
   }
-});
+}
 
 var styles = StyleSheet.create({
   container: {
