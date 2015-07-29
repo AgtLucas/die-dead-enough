@@ -1499,13 +1499,13 @@ menu:React.createElement(Menu,null),
 touchToClose:this.state.touchToClose,
 onChange:this.handleChange.bind(this)},
 React.createElement(View,{style:styles.container},
-React.createElement(Text,{style:styles.welcome},'Yo!!!'),
+React.createElement(Text,{style:styles.welcome},'Yo!!!')),
+
 
 
 React.createElement(Button,{style:styles.button},'Toggle Menu'),
 React.createElement(Button,{style:styles.button2,
-onPress:this.handleOpenWithTouchToClose.bind(this)},'Open Menu (overlay closes)'))));}}]);return RVDB;})(React.Component);
-
+onPress:this.handleOpenWithTouchToClose.bind(this)},'Open Menu (overlay closes)')));}}]);return RVDB;})(React.Component);
 
 
 
