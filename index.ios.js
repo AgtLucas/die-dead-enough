@@ -98,19 +98,19 @@ class RVDB extends React.Component {
   render() {
     return(
       <SideMenu
-        menu={<Menu/>}
+        menu={<Menu />}
         touchToClose={this.state.touchToClose}
         onChange={this.handleChange.bind(this)}>
         <View style={styles.container}>
           <Text style={styles.welcome}>
             Yo!!!
           </Text>
+        </View>
           <Button style={styles.button}>Toggle Menu</Button>
           <Button style={styles.button2}
             onPress={this.handleOpenWithTouchToClose.bind(this)}>
               Open Menu (overlay closes)
           </Button>
-        </View>
       </SideMenu>
     );
   }
