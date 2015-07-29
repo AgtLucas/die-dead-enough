@@ -77,7 +77,7 @@ class RVDB extends React.Component {
     super(props);
 
     this.state = {
-      touchToClose: false
+      touchToClose: false,
     };
   }
 
@@ -90,7 +90,7 @@ class RVDB extends React.Component {
   handleChange(isOpen) {
     if (!isOpen) {
       this.setState({
-        touchToClose: false
+        touchToClose: false,
       });
     }
   }
