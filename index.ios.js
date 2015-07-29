@@ -18,39 +18,39 @@ var {
 } = React;
 
 var styles = StyleSheet.create({
-button: {
- position: 'absolute',
- bottom: 50,
- backgroundColor: 'red',
- borderRadius: 20,
-},
-button2: {
- position: 'absolute',
- bottom: 20,
- backgroundColor: 'red',
- borderRadius: 20,
-},
-caption: {
- fontSize: 20,
- fontWeight: 'bold',
- alignItems: 'center',
-},
-container: {
- flex: 1,
- justifyContent: 'center',
- alignItems: 'center',
- backgroundColor: '#F5FCFF',
-},
-welcome: {
- fontSize: 20,
- textAlign: 'center',
- margin: 10,
-},
-instructions: {
- textAlign: 'center',
- color: '#333333',
- marginBottom: 5,
-},
+  button: {
+   position: 'absolute',
+   bottom: 50,
+   backgroundColor: 'red',
+   borderRadius: 20,
+  },
+  button2: {
+   position: 'absolute',
+   bottom: 20,
+   backgroundColor: 'red',
+   borderRadius: 20,
+  },
+  caption: {
+   fontSize: 20,
+   fontWeight: 'bold',
+   alignItems: 'center',
+  },
+  container: {
+   flex: 1,
+   justifyContent: 'center',
+   alignItems: 'center',
+   backgroundColor: '#F5FCFF',
+  },
+  welcome: {
+   fontSize: 20,
+   textAlign: 'center',
+   margin: 10,
+  },
+  instructions: {
+   textAlign: 'center',
+   color: '#333333',
+   marginBottom: 5,
+  },
 });
 
 class Button extends React.Component {
