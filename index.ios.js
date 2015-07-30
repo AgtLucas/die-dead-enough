@@ -15,6 +15,8 @@ var {
   Image,
   ScrollView,
   TouchableOpacity,
+  TabBarIOS,
+  NavigatorIOS,
 } = React;
 
 var styles = StyleSheet.create({
@@ -69,6 +71,16 @@ class Button extends React.Component {
       </TouchableOpacity>
     );
   }
+}
+
+class StatusBar extends React.Component {
+
+  render() {
+    return(
+      <NavigatorIOS initialRoute={{ title: 'React Native' }} />
+    );
+  }
+
 }
 
 class RVDB extends React.Component {
